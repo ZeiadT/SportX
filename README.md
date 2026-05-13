@@ -2,7 +2,7 @@
 
 SportX is a modern iOS app for exploring sports, leagues, fixtures, and teams with offline-friendly favourites.
 
-<img width="1376" height="768" alt="SportX preview" src="https://github.com/user-attachments/assets/70381cc0-2cbc-49ab-bcbb-44dd7e7f41f7" />
+<img alt="SportX preview" src="https://github.com/user-attachments/assets/70381cc0-2cbc-49ab-bcbb-44dd7e7f41f7" />
 
 ## Features
 
@@ -35,7 +35,7 @@ SportX follows an MVP-style module structure:
 
 SportX uses **AllSportsAPI** (`https://apiv2.allsportsapi.com`).
 
-- The demo API key lives in `Sportx/Model/Remote/Services/APIService/API.swift` (the app source folder is `Sportx/` with a lowercase x in this repo). **Do not commit your own keys**—prefer an `.xcconfig` file kept out of Git, environment variables, or CI/CD secrets, then update `API.swift` to read from that source.
+- Obtain your own AllSportsAPI key and **do not commit it**. Store it in an `.xcconfig` file kept out of Git, environment variables, or CI/CD secrets, then update `Sportx/Model/Remote/Services/APIService/API.swift` (lowercase x folder) to read from that source.
 
 ## Getting Started
 
