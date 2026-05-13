@@ -44,7 +44,7 @@ SportX uses **AllSportsAPI** (`https://apiv2.allsportsapi.com`).
 
 1. Create a local `SportXSecrets.xcconfig` (not committed) with:
    ```
-   ALL_SPORTS_API_KEY = <your-key>
+   ALL_SPORTS_API_KEY = your_actual_api_key_here
    ```
 2. In Xcode, select the project ➜ **Info** ➜ **Configurations**, and assign `SportXSecrets.xcconfig` to Debug/Release.
 3. Build and run the app.
