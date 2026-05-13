@@ -1,0 +1,80 @@
+# ============================================
+# macOS
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ============================================
+# Xcode
+# ============================================
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+
+# Xcode 13+
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Archives
+*.xcarchive
+
+# Playground
+timeline.xctimeline
+playground.xcworkspace
+
+# ============================================
+# App signing & secrets
+# ============================================
+*.p12
+*.mobileprovision
+*.cer
+*.key
+*.pem
+*.env
+Secrets.plist
+
+# ============================================
+# Logs
+# ============================================
+*.log
+
+# ============================================
+# Firebase / Crashlytics
+# ============================================
+GoogleService-Info.plist
+
+# ============================================
+# Temporary files
+# ============================================
+*.swp
+*.tmp
+*.bak

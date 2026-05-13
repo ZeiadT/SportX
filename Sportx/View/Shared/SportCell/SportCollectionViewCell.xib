@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SportCell" id="sc-cell" customClass="SportCollectionViewCell" customModule="SportX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sc-content">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sc-container">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sc-image">
+                                <rect key="frame" x="0.0" y="1" width="180" height="147.5"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="sc-img-h"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sport Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sc-label">
+                                <rect key="frame" x="8" y="158" width="164" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sc-image" secondAttribute="trailing" id="ebs-6x-K5E"/>
+                            <constraint firstItem="sc-image" firstAttribute="leading" secondItem="sc-container" secondAttribute="leading" id="ig4-iI-j0b"/>
+                            <constraint firstItem="sc-image" firstAttribute="centerX" secondItem="sc-container" secondAttribute="centerX" id="sc-imgcx"/>
+                            <constraint firstItem="sc-image" firstAttribute="top" secondItem="sc-container" secondAttribute="top" id="sc-imgtop"/>
+                            <constraint firstItem="sc-label" firstAttribute="leading" secondItem="sc-container" secondAttribute="leading" constant="8" id="sc-lbllead"/>
+                            <constraint firstItem="sc-label" firstAttribute="top" secondItem="sc-image" secondAttribute="bottom" constant="8" id="sc-lbltop"/>
+                            <constraint firstAttribute="trailing" secondItem="sc-label" secondAttribute="trailing" constant="8" id="sc-lbltrail"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sc-container" secondAttribute="bottom" id="sc-cbot"/>
+                    <constraint firstItem="sc-container" firstAttribute="leading" secondItem="sc-content" secondAttribute="leading" id="sc-clead"/>
+                    <constraint firstItem="sc-container" firstAttribute="top" secondItem="sc-content" secondAttribute="top" id="sc-ctop"/>
+                    <constraint firstAttribute="trailing" secondItem="sc-container" secondAttribute="trailing" id="sc-ctrail"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="sc-container" id="sc-conn-container"/>
+                <outlet property="sportImageView" destination="sc-image" id="sc-conn-image"/>
+                <outlet property="sportNameLabel" destination="sc-label" id="sc-conn-label"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="71"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

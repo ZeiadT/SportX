@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavouritesViewController" customModule="SportX" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyLabel" destination="fav-empty-label" id="fav-empty-out"/>
+                <outlet property="tableView" destination="fav-table-view" id="QIM-Gl-RLq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HEv-Si-6jh">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fav-table-view">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0" alpha="0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No favourite leagues yet.&#10;Tap the ❤️ on a league to add it!" textAlignment="center" numberOfLines="0" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fav-empty-label">
+                    <rect key="frame" x="32" y="422" width="350" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="afL-Ml-LHt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="afL-Ml-LHt" firstAttribute="bottom" secondItem="fav-table-view" secondAttribute="bottom" id="bottom-constraint"/>
+                <constraint firstItem="fav-table-view" firstAttribute="leading" secondItem="afL-Ml-LHt" secondAttribute="leading" id="leading-constraint"/>
+                <constraint firstItem="fav-table-view" firstAttribute="top" secondItem="afL-Ml-LHt" secondAttribute="top" id="top-constraint"/>
+                <constraint firstItem="afL-Ml-LHt" firstAttribute="trailing" secondItem="fav-table-view" secondAttribute="trailing" id="trailing-constraint"/>
+                <constraint firstItem="fav-empty-label" firstAttribute="centerX" secondItem="HEv-Si-6jh" secondAttribute="centerX" id="fav-empty-cx"/>
+                <constraint firstItem="fav-empty-label" firstAttribute="centerY" secondItem="HEv-Si-6jh" secondAttribute="centerY" id="fav-empty-cy"/>
+                <constraint firstItem="fav-empty-label" firstAttribute="leading" secondItem="HEv-Si-6jh" secondAttribute="leading" constant="32" id="fav-empty-lead"/>
+                <constraint firstItem="HEv-Si-6jh" firstAttribute="trailing" secondItem="fav-empty-label" secondAttribute="trailing" constant="32" id="fav-empty-trail"/>
+            </constraints>
+            <point key="canvasLocation" x="-1321" y="37"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
