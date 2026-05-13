@@ -83,3 +83,16 @@ Sportx/
 ## License
 
 MIT License. See [LICENSE](LICENSE).
+
+
+## Work Split
+
+1- Wahid:
+<img width="733" height="752" alt="WhatsApp Image 2026-05-06 at 12 25 59 AM" src="https://github.com/user-attachments/assets/7fa4889c-c287-427b-bab6-777ba63bceef" />
+
+
+2- Zeiad:
+<img width="720" height="811" alt="WhatsApp Image 2026-05-06 at 4 05 06 AM" src="https://github.com/user-attachments/assets/5c6adbfb-58a5-44e3-884e-0e2694db655b" />
+
+
+
