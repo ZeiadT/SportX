@@ -40,6 +40,15 @@ SportX uses **AllSportsAPI** (`https://apiv2.allsportsapi.com`).
 - `Sportx/Model/Remote/Services/APIService/API.swift` reads `ALL_SPORTS_API_KEY` from Info.plist at runtime.
 - If a key was previously committed, assume it is compromised and rotate it immediately.
 
+### API Key Setup (.xcconfig)
+
+1. Create a local `SportXSecrets.xcconfig` (not committed) with:
+   ```
+   ALL_SPORTS_API_KEY = <your-key>
+   ```
+2. In Xcode, select the project ➜ **Info** ➜ **Configurations**, and assign `SportXSecrets.xcconfig` to Debug/Release.
+3. Build and run the app.
+
 ## Getting Started
 
 1. Clone the repository.
@@ -59,7 +68,7 @@ If the simulator name or OS version differs on your machine, list available devi
 
 ## Project Structure
 
-The app source lives under `Sportx/` (lowercase x in this repo) because the Xcode project file references that casing. Use **Sportx** in filesystem paths and **SportX** only for branding text.
+The app source lives under `Sportx/` (lowercase x in this repo) because the Xcode project file references that casing. Use **Sportx** in filesystem paths and **SportX** only for branding text. If you want to standardize casing, rename the folder and update Xcode project references accordingly.
 
 ```
 Sportx/
