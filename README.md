@@ -35,7 +35,9 @@ SportX follows an MVP-style module structure:
 
 SportX uses **AllSportsAPI** (`https://apiv2.allsportsapi.com`).
 
-- Obtain your own AllSportsAPI key and **do not commit it**. Store it in an `.xcconfig` file kept out of Git, environment variables, or CI/CD secrets, then update `Sportx/Model/Remote/Services/APIService/API.swift` (lowercase x folder) to read from that source.
+- Obtain your own AllSportsAPI key and **do not commit it**.
+- Store it in an `.xcconfig` file kept out of Git, environment variables, or CI/CD secrets.
+- Update `Sportx/Model/Remote/Services/APIService/API.swift` (lowercase x folder) to read from that source.
 
 ## Getting Started
 
@@ -54,7 +56,7 @@ xcodebuild -project SportX.xcodeproj -scheme SportX -destination 'platform=iOS S
 
 ## Project Structure
 
-The app source lives under `Sportx/` (lowercase x in this repo; the paths below use that casing).
+The app source lives under `Sportx/` (lowercase x in this repo; Xcode references use this casing, so keep it consistent).
 
 ```
 Sportx/
