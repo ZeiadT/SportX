@@ -8,5 +8,7 @@
 import Foundation
 enum API {
     static let baseURL = "https://apiv2.allsportsapi.com"
-    static let apiKey = "6caff5dacf3351c7a983137a2cccf5bf2814515941942216c6e7853db8f1554e"
+    static var apiKey: String {
+        Bundle.main.object(forInfoDictionaryKey: "ALL_SPORTS_API_KEY") as? String ?? ""
+    }
 }

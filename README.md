@@ -36,9 +36,9 @@ SportX follows an MVP-style module structure:
 SportX uses **AllSportsAPI** (`https://apiv2.allsportsapi.com`).
 
 - Obtain your own AllSportsAPI key and **do not commit it**.
-- Store it in an `.xcconfig` file kept out of Git, environment variables, or CI/CD secrets.
-- Update `Sportx/Model/Remote/Services/APIService/API.swift` (lowercase x folder) by replacing the hardcoded `API.apiKey` value with one read from that source.
-- If you find a key committed in this repository, assume it is compromised and rotate it immediately.
+- Store it in an `.xcconfig` file kept out of Git (or as a user-defined build setting / CI secret) under `ALL_SPORTS_API_KEY`.
+- `Sportx/Model/Remote/Services/APIService/API.swift` reads `ALL_SPORTS_API_KEY` from Info.plist at runtime.
+- If a key was previously committed, assume it is compromised and rotate it immediately.
 
 ## Getting Started
 
