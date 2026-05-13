@@ -42,7 +42,7 @@ SportX uses **AllSportsAPI** (`https://apiv2.allsportsapi.com`).
 
 ### API Key Setup (.xcconfig)
 
-1. Create a local `SportXSecrets.xcconfig` (not committed) with:
+1. Create a local `SportXSecrets.xcconfig` (not committed) and add it to `.gitignore`, with:
    ```
    ALL_SPORTS_API_KEY = your_actual_api_key_here
    ```
@@ -68,7 +68,7 @@ If the simulator name or OS version differs on your machine, list available devi
 
 ## Project Structure
 
-The app source lives under `Sportx/` (lowercase x in this repo) because the Xcode project file references that casing. Use **Sportx** in filesystem paths and **SportX** only for branding text. If you want to standardize casing, rename the folder and update Xcode project references accordingly.
+The app source lives under `Sportx/` (lowercase x in this repo) because the Xcode project file references that casing. Use **Sportx** in filesystem paths and **SportX** only for branding text. On case-sensitive filesystems, mismatched casing can break paths, so keep the casing consistent. If you want to standardize casing, rename the folder and update Xcode project references accordingly.
 
 ```
 Sportx/
