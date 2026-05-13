@@ -38,6 +38,7 @@ SportX uses **AllSportsAPI** (`https://apiv2.allsportsapi.com`).
 - Obtain your own AllSportsAPI key and **do not commit it**.
 - Store it in an `.xcconfig` file kept out of Git, environment variables, or CI/CD secrets.
 - Update `Sportx/Model/Remote/Services/APIService/API.swift` (lowercase x folder) by replacing the hardcoded `API.apiKey` value with one read from that source.
+- If you find a key committed in this repository, assume it is compromised and rotate it immediately.
 
 ## Getting Started
 
@@ -51,14 +52,14 @@ SportX uses **AllSportsAPI** (`https://apiv2.allsportsapi.com`).
 Run tests from Xcode, or via CLI:
 
 ```bash
-xcodebuild -project SportX.xcodeproj -scheme SportX -destination 'platform=iOS Simulator,OS=latest,name=iPhone 15' test
+xcodebuild -project SportX.xcodeproj -scheme SportX -destination 'platform=iOS Simulator,name=iPhone 15' test
 ```
 
-If the simulator name differs on your machine, list available devices with `xcrun simctl list devices` and update the destination.
+If the simulator name or OS version differs on your machine, list available devices with `xcrun simctl list devices` and update the destination accordingly.
 
 ## Project Structure
 
-The app source lives under `Sportx/` (lowercase x in this repo; Xcode references use this casing, so keep it consistent).
+The app source lives under `Sportx/` (lowercase x in this repo). Use **SportX** for branding text, and **Sportx** only when referring to filesystem paths, because the Xcode project references that casing.
 
 ```
 Sportx/
