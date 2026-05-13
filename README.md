@@ -59,7 +59,7 @@ If the simulator name or OS version differs on your machine, list available devi
 
 ## Project Structure
 
-The app source lives under `Sportx/` (lowercase x in this repo). Use **SportX** for branding text, and **Sportx** only when referring to filesystem paths, because the Xcode project references that casing.
+The app source lives under `Sportx/` (lowercase x in this repo) because the Xcode project file references that casing. Use **Sportx** in filesystem paths and **SportX** only for branding text.
 
 ```
 Sportx/

@@ -9,6 +9,10 @@ import Foundation
 enum API {
     static let baseURL = "https://apiv2.allsportsapi.com"
     static var apiKey: String {
-        Bundle.main.object(forInfoDictionaryKey: "ALL_SPORTS_API_KEY") as? String ?? ""
+        guard let key = Bundle.main.object(forInfoDictionaryKey: "ALL_SPORTS_API_KEY") as? String,
+              !key.isEmpty else {
+            fatalError("Missing ALL_SPORTS_API_KEY. Configure it in build settings before running the app.")
+        }
+        return key
     }
 }
